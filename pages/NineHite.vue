@@ -18,13 +18,28 @@
                     </div>
                 </div>
                 <div class="tag-right">
-                    <div class="title-top">Nine Hite</div>
-                    <div class="sidebar-card-top-detail">9 推文</div>
+                    <div>
+                        <div class="title-top">Nine Hite</div>
+                        <div class="sidebar-card-top-detail">9 推文</div>
+                    </div>
                 </div>
             </div>
 
             <div class="profile-main-top">
-                <img src="/bg.png">
+                <div class="obs">
+                    <div class="obs02">
+                        <el-image src="/bg.png"></el-image>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-intro">
+                <div class="ava-edit">
+                    <el-avatar src="/avatar/ht.jpg" :size="134"></el-avatar>
+                    <div class="edit-btn">编辑资料</div>
+                </div>
+                <div class="name-id"></div>
+                <div class="bir-login"></div>
+                <div class="following-er"></div>
             </div>
 
 
@@ -66,6 +81,7 @@
 
             .profile-tag {
                 z-index: 3;
+                padding: 0 15px;
 
                 background-color: white;
 
@@ -85,7 +101,6 @@
                     justify-content: flex-start;
 
                     height: 53px;
-                    padding: 0 15px;
 
                     div {
                     }
@@ -125,19 +140,67 @@
                 .tag-right {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    flex-grow: 1;
+                    justify-content: center;
 
-                    .title-top {
-                        font-weight: 800;
-                        font-size: 19px;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .title-top {
+                            font-weight: 800;
+                            font-size: 19px;
+                        }
                     }
                 }
             }
 
             .profile-main-top {
+
+
+                .obs {
+
+
+                    .obs02 {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        width: 598px;
+                        height: 199.33px;
+                        overflow: hidden;
+                        img {
+
+                        }
+                    }
+                }
+            }
+            .profile-intro {
+
+                margin-bottom: 15px;
+                padding-top: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+
                 display: flex;
-                img {
-                    width: 100%;
+                flex-direction: column;
+
+                .ava-edit {
+                    height: 49px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .el-avatar {
+                        z-index: 1;
+
+                    }
+                    .edit-btn {
+                        align-self: center;
+                    }
                 }
             }
         }
