@@ -37,7 +37,14 @@
                     <el-avatar src="/avatar/ht.jpg" :size="134"></el-avatar>
                     <div class="edit-btn">编辑资料</div>
                 </div>
-                <div class="name-id"></div>
+                <div class="name-id">
+                    <div class="main-name">
+                        Nine Hite
+                    </div>
+                    <div class="main-detail">
+                        @NineHite
+                    </div>
+                </div>
                 <div class="bir-login"></div>
                 <div class="following-er"></div>
             </div>
@@ -201,6 +208,17 @@
                     .edit-btn {
                         align-self: center;
                     }
+                }
+
+                .name-id {
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .bir-login {
+                    margin-bottom: 10px;
                 }
             }
         }
