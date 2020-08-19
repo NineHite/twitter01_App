@@ -190,6 +190,7 @@
                                     </div>
                                     <div class="list-main-desc">
                                         <span slot="title">个人资料</span>
+
                                     </div>
                                 </div>
                             </a>
