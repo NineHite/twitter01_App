@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    color: rgb(20, 23, 26);
+}
+
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* a标签 */
+a {
+    color: rgb(20, 23, 26);
+    text-decoration: none;
+}
+
+a:hover {
+    /*text-decoration: underline;*/
+}
+
+a:visited {
+    color: rgb(20, 23, 26);
+}
+
+.default-font {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    color: rgb(20, 23, 26);
+}
+
+/* 向下小箭头里的弹出框内容字体 */
+.drop-down-font {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(20, 23, 26);
+
+}
+
+/* 左右浮动 */
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+
+/*.el-avatar:hover {
+    !*background-color: rgba(26, 26, 26, 0.15);*!
+    background-color: red;
+}*/
+
+/* hover 样式 */
+.all-hover {
+
+    background-color: rgb(232,245,254);
+
+    /* 菜单按钮背景 */
+    background-color: rgba(29, 161, 242, 0.1);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+
+    /* 主体内容 */
+    background-color: rgb(245, 248, 250);
+
+    /* 菜单按钮 */
+    /*color: rgba(29,161,242,1.00);*/
+    color: #1DA1F2;
+}
+
+.footer-font {
+    font-weight: 400;
+    font-size: 13px;
+    color: #657786;
+}
+
+.tweet-translate {
+    font-weight: 400;
+    color: #1b95e0;
+    font-size: 13px;
+}
+
+.tweet-app, .tweet-reply-to {
+    font-weight: 400;
+    color: #1b95e0;
+    font-size: 15px;
+}
+
+.tweet-content {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+.title-h2 {
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.title-h2-inline {
+    font-weight: 800;
+    font-size: 19px;
+    display: inline;
+}
+
+.menu-font {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171A;
+}
+
+.main-name, .sidebar-card-content {
+    font-weight: bold;
+}
+
+.main-detail, .sidebar-card-bottom {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(101, 119, 134);
+}
+
+.sidebar-card-top-detail {
+    font-size: 13px;
+    color: rgb(101, 119, 134);
+}
+
+.sidebar-card-top-name {
+    font-size: 13px;
+    font-weight: bold;
+}
+.sidebar-card-bottom-more {
+    font-weight: 400;
+    color: #1DA1F2;
+}
+
+.explore-title {
+    font-weight: bold;
+    color: rgb(101, 119, 134);
+}
+
+
+.el-header, .el-main, .el-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.el-menu-item {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171A;
+}
+
+/*
+.page-enter-active, .page-leave-active {
+    transition: opacity .5s
+}
+
+.page-enter, .page-leave-active {
+    opacity: 0
+}
+*/

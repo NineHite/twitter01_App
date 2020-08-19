@@ -1,0 +1,25 @@
+#test .el-dialog__wrapper {
+  cursor: auto; }
+  #test .el-dialog__wrapper .el-dialog {
+    border-radius: 14px; }
+    #test .el-dialog__wrapper .el-dialog .el-dialog__header {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 53px;
+      padding: 0;
+      border-bottom: 1px solid #ccd6dd; }
+      #test .el-dialog__wrapper .el-dialog .el-dialog__header button {
+        display: flex;
+        left: 15px;
+        font-size: 22px; }
+        #test .el-dialog__wrapper .el-dialog .el-dialog__header button i {
+          color: #1da1f2; }
+        #test .el-dialog__wrapper .el-dialog .el-dialog__header button:hover {
+          background-color: rgba(29, 161, 242, 0.1);
+          border-radius: 50%; }
+    #test .el-dialog__wrapper .el-dialog .el-dialog__body {
+      padding: 5px 15px; }
+
+/*# sourceMappingURL=dialog.css.map */

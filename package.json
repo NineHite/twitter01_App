@@ -1,0 +1,23 @@
+{
+  "name": "twitter01",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Hitenine",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0",
+    "vue-text-format": "^1.2.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

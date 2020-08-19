@@ -1,0 +1,58 @@
+{
+    "code": 200,
+    "message": "请求成功",
+    "data": {
+        "count": 2,
+        "tweets": [
+            {
+
+                "tweet": {
+                    "tweetId": 2,
+                    "content": "The lira has lost 15% of its value against the dollar so far this year, the most among big, commodity-importing emerging markets",
+                    "pictures": [],
+                    "commentCount": 12,
+                    "shareCount": 12,
+                    "likeCount": 12,
+
+                    "user": {
+                        "userId": 2,
+                        "nickname": "The Economist",
+                        "username": "TheEconomist",
+                        "avatar": "/avatar/theeconomist.jpg",
+                        "info": "News and analysis with a global perspective.",
+                        "isAuthentic": 1,
+                        "isFollow": 1,
+                        "following": 126,
+                        "followers": 24810000
+                    }
+                }
+            },
+            {
+                "tweet": {
+                    "tweetId": 1,
+                    "content": "一张背景墙",
+                    "pictures": [
+                        {
+                            "url": "/avatar/bg.png"
+                        }
+                    ],
+                    "commentCount": 12,
+                    "shareCount": 12,
+                    "likeCount": 12,
+
+                    "user": {
+                        "userId": 1,
+                        "nickname": "Nine_Hite",
+                        "username": "Hiten_ine",
+                        "avatar": "/avatar/ht.jpg",
+                        "isAuthentic": 0,
+                        "info": "inner peace!",
+                        "isFollow": 2,
+                        "following": 30,
+                        "followers": 1
+                    }
+                }
+            }
+        ]
+    }
+}
