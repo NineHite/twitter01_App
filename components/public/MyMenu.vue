@@ -37,7 +37,7 @@
                                         </svg>
                                     </div>
                                     <div class="list-main-desc">
-                                        <span slot="title">列表</span>
+                                        <span slot="title">医疗</span>
                                     </div>
                                 </div>
                             </a>

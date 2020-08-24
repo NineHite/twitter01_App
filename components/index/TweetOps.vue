@@ -124,7 +124,7 @@
 
             </li>
             <li>
-                <div class="ops-all">
+                <div class="ops-all" @click.stop="createQrCode">
                     <div class="all">
                         <div class="all-1">
                             <div></div>
@@ -139,6 +139,17 @@
                         </div>
                     </div>
                 </div>
+
+
+                <el-dialog
+                        :append-to-body='true'
+                        :visible.sync="qrcodeVisible"
+                        width="39%" style="border-radius: 14px">
+
+                    <div class="discovery-qr-code-container" :id="'discovery-qr-code-container_'">
+
+                    </div>
+                </el-dialog>
 
             </li>
 
@@ -167,9 +178,30 @@
         data() {
             return {
                 dialogVisible: false,
+                qrcodeVisible: false,
             }
         },
         methods: {
+
+            createQrCode() {
+                this.qrcodeVisible = !this.qrcodeVisible;
+                let qrCodeContainer = document.getElementById('discovery-qr-code-container_');
+                if (qrCodeContainer) {
+                    qrCodeContainer.innerHTML = '';
+                    let qrcode = new QRCode(qrCodeContainer, {
+                        width: 150,//设置宽高
+                        height: 150
+                    });
+                    qrcode.makeCode('https://www.hitenine.xyz/NineHite/');
+
+                    console.log(qrcode);
+                }
+
+                console.log("aaa")
+
+
+            },
+
             aaa() {
                 console.log("aaa")
             },
@@ -178,6 +210,11 @@
 </script>
 
 <style lang="scss">
+
+    .discovery-qr-code-container {
+        display: flex;
+        justify-content: center;
+    }
 
     .number {
         padding-left: 10px;

@@ -101,6 +101,12 @@ a:visited {
     font-size: 15px;
 }
 
+.profile-nav {
+    font-size: 15px;
+    font-weight: 800;
+    color: #657786;
+}
+
 .tweet-content {
     font-size: 23px;
     font-weight: 400;

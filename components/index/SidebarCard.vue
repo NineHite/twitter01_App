@@ -16,7 +16,9 @@
                             <h2 class="title-h2">有什么新鲜事？</h2>
                         </div>
                         <div class="card-content">
-                            <div>
+                            <div>欢迎您的加入</div>
+                            <div>为您带来更好的服务</div>
+                            <!--<div>
                                 <span class="sidebar-card-top-detail">
                                     sidebar-card-top-detail
                                 </span>
@@ -26,7 +28,9 @@
                                     <span class="sidebar-card-content">
                                     Tech workers are considering escaping Silicon Valley's sky-high rents
                                 </span>
-                            </div>
+                            </div>-->
+
+                            <div>c</div>
                             <div>c</div>
                         </div>
                         <div class="card-bottom">
@@ -135,6 +139,8 @@
                 margin-top: 28px;
 
                 .card {
+                    width: 318px;
+
                     padding: 0;
                     background-color: rgb(245, 248, 250);
                     border: 1px solid rgb(245, 248, 250);

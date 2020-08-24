@@ -13,7 +13,12 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+        ],
+        script: [
+            {
+                src: 'https://cdn.sunofbeaches.com/qrcodejs/qrcode.min.js'
+            }
+        ],
     },
     /*
     ** Customize the progress-bar color
@@ -32,6 +37,7 @@ export default {
     plugins: [
         '@/plugins/element-ui',
         '@/plugins/vue-text-format',
+        "@/plugins/echarts",
 
     ],
     /*

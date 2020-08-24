@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "echarts": "^4.8.0",
     "element-ui": "^2.4.11",
     "nuxt": "^2.0.0",
     "vue-text-format": "^1.2.5"
