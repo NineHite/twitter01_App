@@ -3,6 +3,9 @@
         <div @click="dialogVisible = true">
             click
         </div>
+        <div v-for="user in users" :key="user.id">
+            <div>{{ user.username }}</div>
+        </div>
         <el-dialog
                 :append-to-body='true'
                 :visible.sync="dialogVisible"
@@ -74,6 +77,8 @@
 
 <script>
 
+import axios from "axios";
+
     // import TweetReplyDialog from "../components/index/TweetReplyDialog";
     import ReplyDialog from "../components/index/ReplyDialog";
 
@@ -85,8 +90,18 @@
         data() {
             return {
                 dialogVisible: false,
+                users:[],
             }
-        }
+        },
+        async asyncData() {
+            const res = await axios.get("http://localhost:8080/users").catch(err => {
+                console.log(err);
+            });
+            console.log(res.data.data);
+            return {
+                users: res.data.data,
+            };
+        },
     }
 </script>
 

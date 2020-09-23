@@ -5,8 +5,8 @@
 <!--            <div style="height: 1px;background-color: rgb(230, 236, 240);width: 598px;padding: 0;"></div>-->
 
             <div class="say-main">
-                <div>
-                    <div>
+                <div style="width: 100%;">
+                    <div style="width: 100%;">
                         <div class="say-main-left">
                             <el-avatar slot="reference" :size="49"
                                        src="/avatar/ht.jpg">
@@ -164,13 +164,13 @@
                 display: flex;
 
                 div {
-                    padding: 0 15px;
+                    //padding: 0 15px;
                     display: flex;
 
                     div {
                         padding: 0;
                         display: flex;
-                        margin: 0 -5px;
+                        //margin: 0 -5px;
 
                         .say-main-left {
                             margin: 5px 5px 0;
@@ -179,6 +179,7 @@
                         }
 
                         .say-main-right {
+                            flex-grow: 1;
 
                             display: flex;
 
@@ -190,16 +191,18 @@
 
                             .right-form {
                                 .el-form {
+                                    width: 100%;
+
                                     padding-top: 5px;
 
                                     .el-textarea {
                                         padding: 10px 0;
-                                        width: 505px;
+                                        //width: 505px;
 
                                     }
 
                                     .el-textarea__inner {
-                                        padding: 0 10px;
+                                        padding: 0;
 
 
                                         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -257,7 +260,8 @@
                                     margin: 0 1px;
 
                                     .ops-main {
-                                        width: 505px;
+                                        width: 100%;
+                                        //width: 505px;
                                         height: 49px;
                                         margin: 0;
                                         display: flex;

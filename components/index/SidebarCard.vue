@@ -4,9 +4,9 @@
             <!-- 侧边搜索框 -->
             <div class="sidebar-search">
                 <el-input
-                        placeholder="搜索 Twitter"
-                        prefix-icon="el-icon-search"
-                        v-model="input">
+                    placeholder="搜索 Twitter"
+                    prefix-icon="el-icon-search"
+                    v-model="input">
                 </el-input>
             </div>
             <div class="sidebar-card">
@@ -20,10 +20,10 @@
                                 <span class="sidebar-card-top-detail">
                                     sidebar-card-top-detail
                                 </span>
-                                    <span class="sidebar-card-top-name">
+                                <span class="sidebar-card-top-name">
                                     sidebar-card-top
                                 </span>
-                                    <span class="sidebar-card-content">
+                                <span class="sidebar-card-content">
                                     Tech workers are considering escaping Silicon Valley's sky-high rents
                                 </span>
                             </div>
@@ -34,158 +34,179 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
+
+
+        <div class="site">
+            <a href="http://beian.miit.gov.cn/" target="_blank">
+                <span class="sidebar-card-top-detail">豫ICP备20007321号</span></a>
+        </div>
+
+
     </div>
 </template>
 
 <script>
-    export default {
-        name: "SideBarCard",
-        data() {
-            return {
-                input: '',
-            }
+export default {
+    name: "SideBarCard",
+    data() {
+        return {
+            input: '',
         }
     }
+}
 </script>
 
 <style lang="scss">
 
-    .el-icon-search {
-        font-size: 18px;
-        margin-top: 4px;
-        margin-left: 1px;
-        padding: 0 0 0 5px;
+.el-icon-search {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-left: 1px;
+    padding: 0 0 0 5px;
+}
+
+.main-sidebar {
+
+    position: relative;
+
+    .site {
+
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+
+            padding-left: 10px;
+        }
     }
 
-    .main-sidebar {
 
 
-        width: 350px;
-        float: right;
-        margin-right: 10px;
-
-        min-height: 1100.4px;
-        height: 100%;
-
-        .sidebar-content {
+    width: 350px;
+    margin-right: 10px;
 
 
+    .sidebar-content {
 
+
+        display: flex;
+
+        padding-top: 10px;
+        padding-bottom: 59px;
+
+
+        .sidebar-search {
             display: flex;
+            align-items: center;
 
-            padding-top: 10px;
-            padding-bottom: 59px;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 350px;
+            height: 53px;
+            line-height: 53px;
+            margin-bottom: 10px;
 
+            .el-input__inner {
+                background: rgb(230, 236, 240);
+                height: 41px;
+                border-radius: 50px;
 
-            .sidebar-search {
-                display: flex;
-                align-items: center;
+                padding-left: 50px;
 
-                background-color: white;
-                position: fixed;
-                top: 0;
-                width: 350px;
-                height: 53px;
-                line-height: 53px;
-                margin-bottom: 10px;
-
-                .el-input__inner {
-                    background: rgb(230, 236, 240);
-                    height: 41px;
-                    border-radius: 50px;
-
-                    padding-left: 50px;
-
-                    &::placeholder {
-                        color: rgb(101, 119, 134);
-                    }
-
-                    &::-webkit-input-placeholder {
-                        /* WebKit browsers 适配谷歌 */
-                        color: rgb(101, 119, 134);
-                    }
-
-                    &:-moz-placeholder {
-                        /* Mozilla Firefox 4 to 18 适配火狐 */
-                        color: rgb(101, 119, 134);
-                    }
-
-                    &::-moz-placeholder {
-                        /* Mozilla Firefox 19+ 适配火狐 */
-                        color: rgb(101, 119, 134);
-                    }
-
-                    &:-ms-input-placeholder {
-                        /* Internet Explorer 10+  适配ie*/
-                        color: rgb(101, 119, 134);
-                    }
-
+                &::placeholder {
+                    color: rgb(101, 119, 134);
                 }
 
-
-                .el-input__inner:focus {
-                    background: white;
+                &::-webkit-input-placeholder {
+                    /* WebKit browsers 适配谷歌 */
+                    color: rgb(101, 119, 134);
                 }
+
+                &:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 适配火狐 */
+                    color: rgb(101, 119, 134);
+                }
+
+                &::-moz-placeholder {
+                    /* Mozilla Firefox 19+ 适配火狐 */
+                    color: rgb(101, 119, 134);
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10+  适配ie*/
+                    color: rgb(101, 119, 134);
+                }
+
             }
 
-            .sidebar-card {
-                display: flex;
-                margin-top: 28px;
 
-                .card {
-                    padding: 0;
-                    background-color: rgb(245, 248, 250);
-                    border: 1px solid rgb(245, 248, 250);
-                    border-radius: 14px;
-                    box-sizing: border-box;
-                    margin-bottom: 15px;
+            .el-input__inner:focus {
+                background: white;
+            }
+        }
 
-                    .card-title {
+        .sidebar-card {
+            display: flex;
+            margin-top: 28px;
+
+            .card {
+                padding: 0;
+                background-color: rgb(245, 248, 250);
+                border: 1px solid rgb(245, 248, 250);
+                border-radius: 14px;
+                box-sizing: border-box;
+                margin-bottom: 15px;
+
+                .card-title {
+                    padding: 10px 15px;
+                    border-bottom: 1px solid rgb(230, 236, 240);
+                }
+
+                .card-content {
+                    div {
+                        padding: 10px 15px;
+                        border-bottom: 1px solid rgb(230, 236, 240);
+                    }
+                }
+
+                .card-bottom {
+                    padding: 10px 15px;
+
+                    border: none;
+                }
+
+            }
+
+            .el-card {
+                background-color: rgb(245, 248, 250);
+                border: 1px solid rgb(245, 248, 250);
+                border-radius: 14px;
+                box-sizing: border-box;
+                margin-bottom: 15px;
+
+                ul {
+                    li {
                         padding: 10px 15px;
                         border-bottom: 1px solid rgb(230, 236, 240);
                     }
 
-                    .card-content {
-                        div {
-                            padding: 10px 15px;
-                            border-bottom: 1px solid rgb(230, 236, 240);
-                        }
-                    }
-
-                    .card-bottom {
+                    li:last-child {
                         padding: 10px 15px;
 
                         border: none;
                     }
-
                 }
 
-                .el-card {
-                    background-color: rgb(245, 248, 250);
-                    border: 1px solid rgb(245, 248, 250);
-                    border-radius: 14px;
-                    box-sizing: border-box;
-                    margin-bottom: 15px;
-
-                    ul {
-                        li {
-                            padding: 10px 15px;
-                            border-bottom: 1px solid rgb(230, 236, 240);
-                        }
-
-                        li:last-child {
-                            padding: 10px 15px;
-
-                            border: none;
-                        }
-                    }
-
-                }
             }
         }
     }
+}
 
 
 </style>
